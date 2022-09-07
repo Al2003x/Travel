@@ -53,11 +53,7 @@ section {
   color: #fff;
 }
 
-section [
-  padding: 5rem 9%;
-]
-
-.section__title {
+section[padding: 5rem 9%;] .section__title {
   text-align: center;
   margin-bottom: 2.5rem;
   font-size: 4rem;
@@ -75,14 +71,14 @@ section [
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header.active {
   background: #fff;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -146,19 +142,19 @@ section [
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   z-index: 10000;
   -webkit-transform: translateY(-110%);
-          transform: translateY(-110%);
+  transform: translateY(-110%);
 }
 
 .search-form.active {
   -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 .search-form #close-search {
@@ -183,8 +179,8 @@ section [
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .search-form form input {
@@ -232,13 +228,13 @@ section [
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-size: cover !important;
   background-position: center !important;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   padding: 2rem 9%;
 }
 
@@ -262,8 +258,8 @@ section [
 
 .home .box.second {
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .slider__content {
@@ -278,7 +274,7 @@ section [
 .slider__content-title {
   font-size: 6rem;
   color: #219150;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   text-transform: uppercase;
 }
 
@@ -298,8 +294,8 @@ section [
 .category__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  -ms-grid-columns: (minmax(29rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
   gap: 1.5rem;
 }
 
@@ -325,4 +321,194 @@ section [
   color: #10221b;
   padding: 1rem 0;
   line-height: 2;
+}
+
+.about {
+  background: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about-image {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 42rem;
+  flex: 1 1 42rem;
+  padding-right: 5rem;
+  padding-bottom: 5rem;
+}
+
+.about-image__img {
+  width: 100%;
+  -webkit-box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 42rem;
+  flex: 1 1 42rem;
+}
+
+.about-content__title {
+  font-size: 3rem;
+  color: #219150;
+}
+
+.about-content__text {
+  font-size: 1.5rem;
+  color: #10221b;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.slide {
+  border: 0.2rem solid #10221b;
+}
+
+.slide:hover .product-slider__image .product-slider__icons {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.product-slider__image {
+  position: relative;
+  overflow: hidden;
+  height: 30rem;
+  width: 100%;
+}
+
+.product-slider__image-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.product-slider__icons {
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  text-align: center;
+  z-index: 10;
+  -webkit-transform: translateY(7rem);
+  transform: translateY(7rem);
+}
+
+.product-slider__icons a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  background: #10221b;
+  color: #fff;
+  margin: 0 0.2rem;
+}
+
+.product-slider__icons a:hover {
+  background: #219150;
+}
+
+.product-slider__content {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.product-slider__title {
+  font-size: 2rem;
+  color: #10221b;
+}
+
+.product-slider__price {
+  padding: 1rem 0;
+  padding-top: 0.5rem;
+  font-size: 2rem;
+  color: #219150;
+}
+
+.product-slider__stars i {
+  font-size: 1.7rem;
+  color: #10221b;
+}
+
+.packages {
+  background: #eee;
+}
+
+.packages-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(32rem, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+}
+
+.packages-box {
+  text-align: center;
+  background: #fff;
+  border: 0.2rem solid #10221b;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+
+.packages-box:hover {
+  background: #10221b;
+}
+
+.packages-box:hover .packages-box__content > * {
+  color: #fff;
+}
+
+.packages-box:hover .btn {
+  border-color: #fff;
+}
+
+.packages-box:hover .btn:hover {
+  background: #fff;
+  color: #10221b;
+}
+
+.packages-box__image {
+  height: 25rem;
+  overflow: hidden;
+  padding: 2rem;
+  padding-bottom: 0;
+  border-radius: 0.5rem;
+}
+
+.packages-box__image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.packages-box__content {
+  padding: 2rem;
+}
+
+.packages-box__title {
+  font-size: 2rem;
+  color: #10221b;
+}
+
+.packages-box__text {
+  font-size: 1.5rem;
+  color: #10221b;
+  padding: 1rem 0;
+  line-height: 2;
+}
+
+.packages-box__price {
+  font-size: 2rem;
+  color: #219150;
 }
