@@ -1,16 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>Travel</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"><i class="fs fa-hiking">travel.</i></a>
 
-</body>
+      <nav class="navbar">
+        <div id="nav-close" class="fas fa-times"></div>
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__link">home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__link">about</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#shop" class="navbar__link">shop</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#packages" class="navbar__link">packages</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#reviews" class="navbar__link">reviews</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#blogs" class="navbar__link">blogs</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <div id="search-btn" class="fas fa-search"></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="search-form">
+        <div id="close-search" class="fas fa-times"></div>
+        <form action="">
+          <input
+            type="search"
+            name=""
+            placeholder="search here..."
+            id="search-box"
+          />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+      </div>
+
+      <section class="home" id="home">
+        <div class="swiper home-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slider-1 slider">
+                <div class="slider__content">
+                  <span>never stop</span>
+                  <h3 class="slider__content-title">exploring</h3>
+                  <p class="slider__content-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Impedit unde ex molestias soluta consequatur saepe aliquam,
+                    excepturi delectus consequuntur minus!
+                  </p>
+                  <a href="#" class="btn">get started</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slider-2 slider">
+                <div class="slider__content">
+                  <span>make tour</span>
+                  <h3 class="slider__content-title">amazing</h3>
+                  <p class="slider__content-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Impedit unde ex molestias soluta consequatur saepe aliquam,
+                    excepturi delectus consequuntur minus!
+                  </p>
+                  <a href="#" class="btn">get started</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="slider-3 slider">
+                <div class="slider__content">
+                  <span>explore the</span>
+                  <h3 class="slider__content-title">new world</h3>
+                  <p class="slider__content-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Impedit unde ex molestias soluta consequatur saepe aliquam,
+                    excepturi delectus consequuntur minus!
+                  </p>
+                  <a href="#" class="btn">get started</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
+      <section class="category" id="category">
+        <h2 class="section__title">adventure idea!</h2>
+        <div class="category__container">
+          <div class="category-box">
+            <img class="category-box__img" src="img/category-1.jpg" alt="" />
+            <h3 class="category-box__title">bungee jump</h3>
+            <p class="category-box__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum,
+              id.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+          <div class="category-box">
+            <img class="category-box__img" src="img/category-2.jpg" alt="" />
+            <h3 class="category-box__title">zip lines</h3>
+            <p class="category-box__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum,
+              id.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+          <div class="category-box">
+            <img class="category-box__img" src="img/category-3.jpg" alt="" />
+            <h3 class="category-box__title">Canoeing</h3>
+            <p class="category-box__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum,
+              id.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+          <div class="category-box">
+            <img class="category-box__img" src="img/category-4.jpg" alt="" />
+            <h3 class="category-box__title">kayaking</h3>
+            <p class="category-box__text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum,
+              id.
+            </p>
+            <a href="#" class="btn">read more</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
