@@ -1,4 +1,4 @@
-let navbar = document.querySelector(".navbar");
+let navbar = document.querySelector(".navbar__list");
 let searchForm = document.querySelector(".search-form");
 
 // @ts-ignore
